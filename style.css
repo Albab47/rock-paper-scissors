@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #8DCBE6;
+    /* border: 1px solid #ffe920; */
+    border-radius: .3rem;
+    max-width: 30rem;
+    width: 90%;
+    margin: 4rem auto;
+    padding: 1.7rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+h4 {
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #8DCBE6;
+}
+
+#heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #FFEA20;
+}
+
+.final-result {
+    font-size: .87rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.text {
+    margin-bottom: 0.5rem;
+    font-size: .9rem;
+}
+
+.btn {
+    background-color: #FFEA20;
+    width: 4.3rem;
+    height: 4.3rem;
+    color: #000;
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 1px 1px 2px rgb(54, 54, 54);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+.buttons i {
+    font-size: 2rem
+}
+
+.round-result {
+    color: #000;
+    margin-top: .8rem;
+    text-shadow: 1px 1px 1px #FFEA20;
+}
+
+#score-board {
+    background-color: #E3F6FF;
+    border-radius: .2rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.136);
+    width: 19rem;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.win-text, .lose-text {
+    font-size: .7rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.187);
+    padding-top: .4rem;
+    margin: .5rem;
+    font-weight: 600;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.computer,
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+}
+
+.pAgain-btn {
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    width: 4.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    background-color: rgb(37, 116, 243);
+    color: #fff;
+    cursor: pointer;
+}
+
+.restart-btn {
+    /* background-color: rgb(37, 116, 243); */
+    color: #000;
+    border: 1px solid #EEE;
+    width: auto;
+    border-radius: .1rem;
+    font-size: .65rem;
+    margin-top: .7rem;
+    padding: .05rem .3rem;
+}
+
+.restart-btn:hover {
+    background-color: rgb(222, 222, 222);
+    border: none;
+}
+
+button i {
+    margin-right: .18rem;
+    font-size: .57rem
+}
