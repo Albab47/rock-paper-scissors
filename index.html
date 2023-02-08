@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/fce591d459.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <header id="heading">Rock Paper Scissor</header>
     
+    <div class="final-result">First to reach score 5 wins the game</div>
+    <div class="text">Chose your selection: </div>
+
+    <!-- PLAYER SELECTION -->
+    <div class="buttons">
+        <button class="btn" value="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+        <button class="btn" value="paper"><i class="fa-solid fa-hand"></i></button>
+        <button class="btn" value="scissors"><i class="fa-solid fa-hand-scissors"></i></button>
+    </div>
+
+    <!-- ROUND RESULT -->
+    <div class="round-result"></div>
+
+    <!-- SCORE BOARD -->
+    <div id="score-board">
+        <div class="score">
+            <div class="player">
+                <h4>Your score</h4>
+                <div class="p-score">0</div>
+            </div>
+            <div class="computer">
+                <h4>Computer score</h4>
+                <div class="c-score">0</div>
+            </div>
+        </div>
+
+    </div>
+    <button class="restart-btn"><i class="fa-solid fa-rotate-right"></i>restart</button>
+
 </body>
+
 </html>
