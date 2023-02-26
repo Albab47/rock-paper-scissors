@@ -5,46 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,700&family=Slackey&display=swap"
+        rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/fce591d459.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header id="heading">Rock Paper Scissor</header>
-    
-    <div class="final-result">First to reach score 5 wins the game</div>
-    <div class="text">Chose your selection: </div>
+    <!-- UI -->
+    <header class="header">
+        <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
 
-    <!-- PLAYER SELECTION -->
-    <div class="buttons">
-        <button class="btn" value="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
-        <button class="btn" value="paper"><i class="fa-solid fa-hand"></i></button>
-        <button class="btn" value="scissors"><i class="fa-solid fa-hand-scissors"></i></button>
-    </div>
-
-    <!-- ROUND RESULT -->
-    <div class="round-result"></div>
-
-    <!-- SCORE BOARD -->
-    <div id="score-board">
-        <div class="score">
-            <div class="player">
-                <h4>Your score</h4>
-                <div class="p-score">0</div>
-            </div>
-            <div class="computer">
-                <h4>Computer score</h4>
-                <div class="c-score">0</div>
+    <main>
+        <div class="scoreboard">
+            <h2 class="score-info" id="scoreInfo">Choose your selection</h2>
+            <h3 class="score-massage" id="scoreMassage">First to reach score 5 wins the game!</h3>
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="sign" id="playerSign"><i class="fa-solid fa-question"></i></div>
+                    <div class="score" id="playerScore">Player: 0</div>
+                </div>
+                <div class="score-box">
+                    <div class="sign" id="computerSign"><i class="fa-solid fa-question"></i></div>
+                    <div class="score" id="computerScore">Computer: 0</div>
+                </div>
             </div>
         </div>
+        <div class="buttons">
+            <button class="btn" id="rockBtn">
+                <div class="sign"><i class="fa-solid fa-hand-back-fist"></i></div>
+            </button>
+            <button class="btn" id="paperBtn">
+                <div class="sign"><i class="fa-solid fa-hand"></i></div>
+            </button>
+            <button class="btn" id="scissorsBtn">
+                <div class="sign"><i class="fa-solid fa-hand-scissors"></i></div>
+            </button>
+        </div>
 
+        <button class="restart-btn" id="restartBtn"><i class="fa-solid fa-rotate-right"></i>restart</button>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">Copyright &copy; 2023 <a href="https://github.com/Albab47">Albab47 <i
+                class="fab fa-github"></i></a>
+    </footer>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay">
+        <!-- OVERLAY CONTENT -->
+        <div class="modal" id="gameoverModal">
+            <p class="modal-title" id="gameoverMsg"></p>
+            <button class="btn-playagain" id="playAgainBtn">Play again</button>
+        </div>
     </div>
-    <button class="restart-btn"><i class="fa-solid fa-rotate-right"></i>restart</button>
-
 </body>
 
 </html>
