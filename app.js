@@ -148,6 +148,7 @@ function finalMsg () {
     gameoverMsg.textContent = "You lost..";
 }
 
+// When game end or player hit restart
 function restartGame () {
     playerScore = 0;
     computerScore = 0;
